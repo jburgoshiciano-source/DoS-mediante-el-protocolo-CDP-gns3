@@ -28,11 +28,51 @@ El laboratorio se implementó en GNS3 para simular una red corporativa básica v
     * **Atacante:** Kali Linux (IP `198.1.98.60`).
     * **Víctima:** PC1 / VPCS (IP `198.1.98.10.`).
 
-![Topología del laboratorio](https://github.com/user-attachments/assets/d5f2953c-e147-4316-a8a8-866b22f38e8c)
+<img width="888" height="650" alt="Image" src="https://github.com/user-attachments/assets/d3be5c83-f0de-4a50-a954-edcb1d3cc823" />
 
+### Tabla de Direccionamiento
 
+| Dispositivo | Dirección IP | Máscara de Subred | Gateway Predeterminado |
+| :--- | :--- | :--- | :--- |
+| **Router Gateway** | 198.1.98.1 | 255.255.255.0 (/24) | N/A |
+| **Kali Linux (Atacante)** | 198.1.98.60 | 255.255.255.0 (/24) | 198.1.98.1 |
+| **PC1 (Víctima)** | 198.1.98.10 | 255.255.255.0 (/24) | 198.1.98.1 |
+---
 
+ Requisitos Previos y Herramientas
 
+Para la ejecución exitosa de estos scripts, se requiere el siguiente entorno:
+
+* **Sistema Operativo:** Kali Linux o cualquier distribución Linux basada en Debian.
+* **Lenguaje:** Python 3.x.
+* **Librerías:** `Scapy` (Instalación: `sudo apt install python3-scapy`).
+* **Privilegios:** Acceso **Root** (sudo) es obligatorio para la inyección de paquetes en crudo y la manipulación de interfaces de red.
+
+---
+
+ Ataque : DoS mediante Inundación CDP 
+
+ ### Objetivo del Script
+El script `ataque_cdp2.py` El objetivo del script es ejecutar un ataque de Denegación de Servicio (DoS) mediante el protocolo CDP, enviando paquetes CDP falsificados desde un equipo atacante para saturar la tabla de vecinos del switch Cisco, afectando su plano de control y la capacidad de administración del dispositivo dentro de un entorno de laboratorio controlado.
+
+### Parámetros Usados
+* **Interfaz:** `eth0`
+* **Dirección Destino:** Multicast Cisco 
+    * *Device ID:* Generado aleatoriamente 
+    * *Port ID:* Simulación de interfaces Ethernet 
+    * *Capabilities:* Generadas de forma aleatoria para simular distintos tipos de dispositivos de red
+
+---
+
+Medidas de Mitigación
+Para proteger la infraestructura contra estos vectores de ataque, se recomiendan las siguientes configuraciones de endurecimiento (Hardening):
+
+Contra CDP 
+Deshabilitar CDP: En todas las interfaces que conectan a usuarios finales o zonas no confiables.
+```bash
+Switch(config-if)# no cdp run
+```
+Control de Versión: Utilizar CDPv2 con autenticación (si es soportado) o migrar a LLDP con medidas de seguridad.
 
 
 
