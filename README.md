@@ -72,22 +72,4 @@ Deshabilitar CDP: En todas las interfaces que conectan a usuarios finales o zona
 ```bash
 Switch(config-if)# no cdp run
 ```
-Control de Versión: Utilizar CDPv2 con autenticación (si es soportado) o migrar a LLDP con medidas de seguridad.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
