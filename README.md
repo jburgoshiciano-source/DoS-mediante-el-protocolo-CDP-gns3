@@ -8,7 +8,7 @@
 
 **Fecha:**  01 Junio 2026
 
-**Link del video**: [https://youtu.be/s6Emg7BInSg](https://youtu.be/DgTl9wyqAUs)
+**Link del video**: [https://youtu.be/s6Emg7BInSg]([https://youtu.be/DgTl9wyqAUs])
 
 
 ---
@@ -19,14 +19,14 @@ El laboratorio se implementó en GNS3 para simular una red corporativa básica v
 
 
 ### Detalles de la Topología
-* **Segmentación de Red:** Se ha configurado la **VLAN 2295** (basada en los últimos 4 dígitos de la matrícula).
-* **Direccionamiento IP:** Subred `198.1.98.0/24`.
+* **Segmentación de Red:** Se ha configurado la **VLAN 1**
+* **Direccionamiento IP:** Subred `192.168.140.0/24`.
 * **Infraestructura:**
     * **Router Cisco c7200**
     * **Switch Cisco IOU L2**
 * **Actores:**
-    * **Atacante:** Kali Linux (IP `198.1.98.60`).
-    * **Víctima:** PC1 / VPCS (IP `198.1.98.10.`).
+    * **Atacante:** Kali Linux (IP `192.168.140.132`).
+    * **Víctima:** PC1 / VPCS (IP `192.168.140.120`).
 
 <img width="888" height="650" alt="Image" src="https://github.com/user-attachments/assets/d3be5c83-f0de-4a50-a954-edcb1d3cc823" />
 
@@ -34,9 +34,9 @@ El laboratorio se implementó en GNS3 para simular una red corporativa básica v
 
 | Dispositivo | Dirección IP | Máscara de Subred | Gateway Predeterminado |
 | :--- | :--- | :--- | :--- |
-| **Router Gateway** | 198.1.98.1 | 255.255.255.0 (/24) | N/A |
-| **Kali Linux (Atacante)** | 198.1.98.60 | 255.255.255.0 (/24) | 198.1.98.1 |
-| **PC1 (Víctima)** | 198.1.98.10 | 255.255.255.0 (/24) | 198.1.98.1 |
+| **Router Gateway** | 192.168.140.1 | 255.255.255.0 (/24) | N/A |
+| **Kali Linux (Atacante)** | 192.168.140.132 | 255.255.255.0 (/24) | 192.168.140.132 |
+| **PC1 (Víctima)** | 192.168.140.120 | 255.255.255.0 (/24) | 192.168.140.1 |
 ---
 
  Requisitos Previos y Herramientas
