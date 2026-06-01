@@ -8,7 +8,7 @@
 
 **Fecha:**  01 Junio 2026
 
-**Link del video**: [https://youtu.be/s6Emg7BInSg]([https://youtu.be/DgTl9wyqAUs])
+**Link del video**: [https://youtu.be/s6Emg7BInSg]([https://www.youtube.com/watch?v=IMiUdTeN-O0])
 
 
 ---
