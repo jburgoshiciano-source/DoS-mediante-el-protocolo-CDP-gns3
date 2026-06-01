@@ -6,7 +6,7 @@
 
 **Asignatura:**  Seguridad en Redes
 
-**Fecha:**  06 Febrero 2026
+**Fecha:**  01 Junio 2026
 
 **Link del video**: [https://youtu.be/s6Emg7BInSg](https://youtu.be/DgTl9wyqAUs)
 
