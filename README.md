@@ -28,7 +28,7 @@ El laboratorio se implementó en GNS3 para simular una red corporativa básica v
     * **Atacante:** Kali Linux (IP `192.168.140.132`).
     * **Víctima:** PC1 / VPCS (IP `192.168.140.120`).
 
-<img width="888" height="650" alt="Image" src="(https://github.com/jburgoshiciano-source/DoS-mediante-el-protocolo-CDP-gns3/blob/4bd6302c763df840d1c6a647a1580aacc459e6ab/1111111.png)" />
+<img width="888" height="650" alt="Image" src="https://github.com/jburgoshiciano-source/DoS-mediante-el-protocolo-CDP-gns3/blob/4bd6302c763df840d1c6a647a1580aacc459e6ab/1111111.png" />
 
 ### Tabla de Direccionamiento
 
